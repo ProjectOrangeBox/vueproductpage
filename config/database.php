@@ -2,8 +2,8 @@
 
 return [
 	'type' => 'mysql',
-	'name' => 'example',
-	'server' => '127.0.0.1',
+	'name' => $_ENV['databasename'],
+	'server' => $_ENV['databasehost'],
 	'username' => $_ENV['databaseuser'],
 	'password' => $_ENV['databasepassword'],
 ];
